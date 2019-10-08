@@ -49,8 +49,11 @@ class ArrayObj{
 
         $ind = 0;
 
+        echo "Adding elements to array\n";
+        echo "------------------------\n";
+
         do{
-            echo "Element: ";
+            echo "Element ". ($ind+1) .": ";
             $elem = readline();
 
             $this->array[$ind] = $delimiter.$elem.$delimiter;
@@ -72,6 +75,8 @@ class ArrayObj{
      * @param string $endDelimiter
      */
     function draw($separator, $initialDelimiter, $endDelimiter){
+
+        echo "\nARRAY:\n";
 
         echo "$initialDelimiter";
 
