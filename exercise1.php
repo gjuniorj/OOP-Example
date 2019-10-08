@@ -6,7 +6,7 @@ require "classArrayObj.php";
 
 $newArray = new ArrayObj();
 
-$newArray->createDynamically();
-$newArray->draw('|','','');
+$newArray->createArrayDynamically();
+$newArray->drawArray('|','','');
 
 ?>

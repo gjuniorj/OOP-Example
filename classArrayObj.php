@@ -36,7 +36,7 @@ class ArrayObj{
      * Returns length of array.
      * @return int
      */
-    function length(){
+    function arrayLength(){
         return count($this->array);
     }
 
@@ -45,7 +45,7 @@ class ArrayObj{
      * Dynamically inserts elements in a array with the specified delimiter between elements.
      * @param string $delimiter
      */
-    function createDynamically($delimiter = ''){
+    function createArrayDynamically($delimiter = ''){
 
         $ind = 0;
 
@@ -74,13 +74,13 @@ class ArrayObj{
      * @param string $initialDelimiter
      * @param string $endDelimiter
      */
-    function draw($separator, $initialDelimiter, $endDelimiter){
+    function drawArray($separator, $initialDelimiter, $endDelimiter){
 
         echo "\nARRAY:\n";
 
         echo "$initialDelimiter";
 
-        $arrayLength = $this->length();
+        $arrayLength = $this->arrayLength();
 
         for ($ind=0; $ind<$arrayLength; $ind++){
 
